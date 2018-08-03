@@ -1,4 +1,4 @@
 # Laurenzarus.github.io
-The code for my personal website. Currently hosts the project/website I made with my team during USC's Hackathon TrojanHacks Strikes Back 2018.
+The code for my personal website. The site can be viewed at Laurenzarus.github.io.
 
-Planning to implement this page as my final project for ITP 104 - Web Publishing at USC. At that point the homepage will contain a link to the bingo game.
+Currently represents the final project of ITP-104: Introduction to Web Development that I took in the Spring of 2018 at USC.
