@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laurence Fong | Projects</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="skdslider-master/src/skdslider.js"></script>
+        <link href="skdslider-master/src/skdslider.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="outercontainer">
+            <div id="logo">
+                <a href="index.html"><img id="logoPic" src="face.JPG"></a>
+            </div>
+            <div id="usc">
+                <a href="https://viterbischool.usc.edu"><img src="usc.png"></a>
+            </div>
+
+            <div id="infobox">
+                As a student of Computer Science, over the years I have participated and completed a number of projects, both in and out of the classroom. I am most proud of completing USC Bingo at TrojanHacks Strikes Back 2017, as I was the de-facto leader of the group (all the other members were below me in the CS course progression).
+            </div>
+            <div class="clear"></div>
+            <hr>
+            <div id="container">
+                <div id="demo" class="skdslider">
+                <ul class="slides">
+
+                    <li class="slide">
+                        <img src="skdslider-master/slides/1.png" /> 
+                        <div class="slide-desc">
+                            <h2>USC Bingo</h2>
+                            <p>A Bingo game based on University of Southern California memes. Much of the content of the bingo boards was derived off the Facebook meme page for USC. The content of the bingo board is randomized with each playthrough, so that no two players have exactly the same experience. Can be accessed at <a href="https://laurenzarus.github.io/TrojanHacks2018/">this</a> link.</p>
+                        </div>
+                    </li>
+
+                    <li class="slide">
+                        <img src="skdslider-master/slides/2.png" />
+                        <div class="slide-desc">  
+                            <h2>Tic-Tac-Toe</h2>
+                            <p>As a final assignment in a heuristics Freshman Seminar at New York University I along with a partner coded a simple Tic-Tac-Toe game to be played against the computer. The computer always makes one of the optimal choices in every situation, so it is impossible for a human to defeat it. </p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="skdslider-master/slides/3.png" />
+                        <div class="slide-desc">  
+                            <h2>Sunset Pediatrics SF</h2>
+                            <p>I helped to create the website for this pediatric practice a long time ago, in my early years of high school. I used SandVox, similar to other "What you see is what you get" website creators out there. Can be accessed at <a href="http://sunsetpediatricssf.com">this</a> link.</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="iconContainer">
+                <div class="icon">
+                    <a href="blog.html">  
+                        <p>Blog</p>
+                    </a>
+                    <div class="picture">
+                        <a href="blog.html">
+                            <img src="blog.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="projects.html">  
+                        <p>Projects</p>
+                    </a>
+                    <div class="picture">
+                        <a href="projects.html"><img src="projects.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="contact.html">  
+                        <p> Contact</p>
+                    </a>
+                    <div class="picture">
+                        <a href="contact.html"><img src="email.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="education.html">  
+                        <p>Education</p>
+                    </a>
+                    <div class="picture">
+                        <a href="education.html"><img src="education.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="experience.html">  
+                        <p>Experience</p>
+                    </a>
+                    <div class="picture">
+                        <a href="experience.html"><img src="experiences.png"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="resume041318.pdf">  
+                        <p>Resume Download</p>
+                    </a>
+                    <div class="picture">
+                        <a href="resume041318.pdf"><img src="download.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="return">Click <a href="index.html">here</a> to return to the homepage</div>
+        </div>
+        
+        <script>
+            jQuery('#demo').skdslider({
+
+              // Delay duration between two slides
+              'delay':5000, 
+
+              // <a href="https://www.jqueryscript.net/animation/">Animation</a> speed
+              'animationSpeed': 500,
+
+              // Show navigation
+              showNav: true,
+
+              // Show/hide navigation icon.
+              'showNextPrev': true, 
+
+              // If true, navigation will be numeric
+              'numericNav': false,
+
+              // Enable auto play
+              'autoSlide': false,
+
+              // Pause on hover
+              'pauseOnHover':false,
+
+              // Show play button
+              'showPlayButton':false,
+
+              // Stop sliding when reaching the last slide
+              stopSlidingAfter: false,
+
+              // fading or sliding
+              animationType: 'fading',
+
+              // Selector of slides
+              slideSelector: '.slide',
+
+              // Active class
+              activeClass: 'active',
+
+              // callback
+              onMarkup: function() {},
+
+            });
+        </script>
+    </body>
+</html>
+<!--Potential logomakr logo logomakr.com/1uXAaX -->
+<!--Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/1uXAaX-->

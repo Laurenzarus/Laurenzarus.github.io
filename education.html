@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laurence Fong | Education</title>
+        <link rel = "stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="education.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+        
+        <script src="Timeline-Slider-jQuery-Timespace/jquery.timespace.js"></script>
+        <link href="Timeline-Slider-jQuery-Timespace/css/jquery.timespace.dark.css" rel="stylesheet">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="outercontainer">
+            <div id="logo">
+                <a href="index.html"><img id="logoPic" src="face.JPG"></a>
+            </div>
+            <div id="usc">
+                <a href="https://viterbischool.usc.edu"><img src="usc.png"></a>
+            </div>
+
+            <div id="infobox">
+                I attended elementary school at San Francisco's Chinese American International School, graduating in 2012. For the next four years I attended San Francisco University High School, where I was also introduced to Computer Science through the institution's AP Computer Science course. After graduating in 2016, I attended New York University for a year before transferring to the University of Southern California, where I am now studying. 
+            </div>
+            <div class="clear"></div>
+            <hr>
+           
+            <div id="timeline"></div>
+            
+            <hr>
+            <div id="iconContainer">
+                <div class="icon">
+                    <a href="blog.html">  
+                        <p>Blog</p>
+                    </a>
+                    <div class="picture">
+                        <a href="blog.html">
+                            <img src="blog.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="projects.html">  
+                        <p>Projects</p>
+                    </a>
+                    <div class="picture">
+                        <a href="projects.html"><img src="projects.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="contact.html">  
+                        <p> Contact</p>
+                    </a>
+                    <div class="picture">
+                        <a href="contact.html"><img src="email.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="education.html">  
+                        <p>Education</p>
+                    </a>
+                    <div class="picture">
+                        <a href="education.html"><img src="education.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="experience.html">  
+                        <p>Experience</p>
+                    </a>
+                    <div class="picture">
+                        <a href="experience.html"><img src="experiences.png"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="resume041318.pdf">  
+                        <p>Resume Download</p>
+                    </a>
+                    <div class="picture">
+                        <a href="resume041318.pdf"><img src="download.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="return">Click <a href="index.html">here</a> to return to the homepage</div>
+        </div>
+        <script>
+            $('#timeline').timespace({
+                timeType: 'year',
+                startTime: 2000,
+                endTime: 2030,
+                maxHeight: 400,
+                markerWidth: 100,
+                use12HourTime: false,
+                markerIncrement: 2,
+                useTimeSuffix: false,
+                
+              data: {
+
+                events: [
+                  {start: 2002, end: 2012, title: 'Chinese American International School', description: 'For around 10 years I attended the Chinese American International School, which prides itself on its techniqutes of Mandarin immersion. Despite having spent much of my childhood there, however, I have actually forgotten a significant portion of my Chinese, unfortunately.'},
+                  {start: 2012, end: 2016, title: 'San Francisco University High School', description: 'I attended SFUHS after graduating from CAIS. I became interested in Computer Science here, through my AP Computer Science coursework. I was active in Technical Theater while I was a student there.'},
+                {
+                    start: 2016,
+                    end: 2017,
+                    title: 'New York University', 
+                    description: 'For a year, I attended NYU, studying Computer Science in the institution\'s College of Arts and Science. I also worked with the University\'s Student Technology Centers for a time.'
+                  },
+                  {start: 2017, end: 2020 , title: 'University of Southern California', description: 'I am currently a student at the University of Southern California, enrolled in the Viterbi School of Engineering\'s Computer Science Major, and planning to acquire a Specialization in Web Development.'},
+                ]
+              },
+
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurence Fong | Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet">
+    <link rel = "stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+        <div id="outercontainer">
+            <div id="logo">
+                <a href="index.html"><img id="logoPic" src="face.JPG"></a>
+            </div>
+            <div id="usc">
+                <a href="https://viterbischool.usc.edu"><img src="usc.png"></a>
+            </div>
+
+            <div id="infobox">
+                My name is Laurence Fong. I am currently pursuing my Bachelors of Science for Computer Science at the University of Southern California, and am projected to graduate at the end of Fall 2021. I hope to find a career in Software Engineering after my time at USC. I am passionate about creating positive change in the world through technology and games. Currently studying Data Structures and Discrete Methods through USC Viterbi's CS course progression.
+            </div>
+            <div class="clear"></div>
+            <hr>
+            <div id="iconContainer">
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100004325807173">  
+                        <p>Facebook</p>
+                    </a>
+                    <div class="picture">
+                        <a href="https://www.facebook.com/profile.php?id=100004325807173">
+                            <img src="facebook.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="www.linkedin.com/in/laurence-fong-b9372913a">  
+                        <p>LinkedIn</p>
+                    </a>
+                    <div class="picture">
+                        <a href="https://www.linkedin.com/in/laurence-fong-b9372913a"><img src="linkedin.png"></a>
+                    </div>
+                </div>
+                <div class="icon" id="snapDescr">
+                    <a>  
+                        <p> Email(Click icon)</p>
+                    </a>
+                    <div class="picture">
+                        <img src="email.jpg" id="snapchat" onclick="toggle()" onmouseover="cursor()">
+                    </div>
+                </div>
+                
+            </div>
+            <form>
+                <label for="in">Send me a message!</label>
+                <input type="text" placeholder="Tell me about yourself..." name="in"></input>
+            </form>
+            <div class="clear"></div>
+            <hr>
+            <div id="iconContainer">
+                <div class="icon">
+                    <a href="blog.html">  
+                        <p>Blog</p>
+                    </a>
+                    <div class="picture">
+                        <a href="blog.html">
+                            <img src="blog.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="projects.html">  
+                        <p>Projects</p>
+                    </a>
+                    <div class="picture">
+                        <a href="projects.html"><img src="projects.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="contact.html">  
+                        <p> Contact</p>
+                    </a>
+                    <div class="picture">
+                        <a href="contact.html"><img src="email.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="education.html">  
+                        <p>Education</p>
+                    </a>
+                    <div class="picture">
+                        <a href="education.html"><img src="education.jpg"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="experience.html">  
+                        <p>Experience</p>
+                    </a>
+                    <div class="picture">
+                        <a href="experience.html"><img src="experiences.png"></a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <a href="resume041318.pdf">  
+                        <p>Resume Download</p>
+                    </a>
+                    <div class="picture">
+                        <a href="resume041318.pdf"><img src="download.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="return">Click <a href="index.html">here</a> to return to the homepage</div>
+        </div>
+        <script>
+            function toggle() {
+                var current = document.getElementById("snapchat");
+                if (current.getAttribute("src") == "email.jpg") {
+                    current.setAttribute("src", "blackMod4.jpg");
+                }
+                else  {
+                    current.setAttribute("src", "email.jpg");
+                }
+            }
+        </script>
+
+    </body>
+</html>

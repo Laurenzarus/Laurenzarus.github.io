@@ -1,0 +1,129 @@
+body {
+    background: url("autumn.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#outercontainer {
+    padding-top: 2vh;
+    margin: 0px 0px 0px 0px;;
+    margin-bottom: 200px;
+}
+#navBar {
+	width: 510px;
+/*	margin-left: auto;*/
+/*	margin-right: auto;*/
+    float: left;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+    padding-top: 4vh;
+}
+.navItem {
+    background-color: green;
+	width: 100px;
+	height: 70px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid red;
+	float: left;
+}
+.clear {
+    clear: both;
+}
+#infobox {
+    float: left;
+    color: whitesmoke;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+/*    font-weight: ;*/
+}
+#iconContainer {
+/*    background-color: aqua;*/
+    position: relative;
+    left: 0%;
+    top: 30%;
+    width: 70vw;
+    height: 65vh;
+/*
+    padding-left: 1vw;
+    padding-right: 1vw;
+*/
+    padding-top: 1vh;
+    z-index: 0;
+/*    float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+#iconContainer a {
+    font-weight: bolder;
+    text-decoration: none;
+    color:deepskyblue;
+    font-size: 2vw;
+}
+#iconContainer a:hover{
+    text-decoration: underline;
+}
+.picture img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20vw;
+}
+.icon {
+    width: 20vw;
+    float: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.icon p {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+body {
+    background-color: #f05133
+}
+#logo {
+    z-index: 1;
+/*    width: 50%;*/
+    float: left;
+    padding-left: 5vw;
+    
+}
+#logoPic {
+    width: 20vw;
+/*    height: 28vw;*/
+    border-radius: 20vw;
+    margin-top: 2.5vw;
+    margin-left: 10vw;
+}
+hr {
+    color: black;
+}
+#usc img {
+    float: right;
+    opacity: 0.8;
+    margin-right: 6vw;
+    margin-top: 7vw;
+    width: 40vw;
+}
+
+
+@media screen and (max-width: 800px) {
+    .picture img {
+      width: 30vw;
+      height: 30vw;
+      border-radius: 30vw;
+    }
+    .icon {
+        width: 30vw;
+    }
+    #logoPic {
+        width: 30vw;
+        margin-left: 1vw;
+    }
+    #usc img {
+        width: 50vw;
+    }
+    
+}
