@@ -4,16 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laurence Fong | Contact</title>
+    <meta name="description" content="This is the contact for my personal website, where users can find information to contact me if they so wish">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet">
-    <link rel = "stylesheet" href="index.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel = "stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
 </head>
 
 <body>
         <div id="outercontainer">
+            <div id="background-disable">
+                Click here to disable background image
+            </div>
+            <!-- <div id="themeChange">
+                Change the Background by Clicking Here!
+            </div> -->
             <div id="logo">
                 <a href="index.html"><img id="logoPic" src="images/face.JPG"></a>
             </div>
+
             <div id="usc">
                 <a href="https://viterbischool.usc.edu"><img src="images/usc.png"></a>
             </div>
@@ -22,10 +33,10 @@
                 My name is Laurence Fong. I am currently pursuing my Bachelors of Science for Computer Science at the University of Southern California, and am projected to graduate at the end of Fall 2021. I hope to find a career in Software Engineering after my time at USC. I am passionate about creating positive change in the world through technology and games. Currently studying Data Structures and Discrete Methods through USC Viterbi's CS course progression.
             </div>
             <div class="clear"></div>
-            <hr>
+            <hr style="border: 1px solid white;">
             <div id="iconContainer">
                 <div class="icon">
-                    <a href="https://www.facebook.com/profile.php?id=100004325807173">  
+                    <a href="https://www.facebook.com/profile.php?id=100004325807173">
                         <p>Facebook</p>
                     </a>
                     <div class="picture">
@@ -35,40 +46,41 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <a href="www.linkedin.com/in/laurence-fong-b9372913a">  
+                    <a href="www.linkedin.com/in/laurence-fong-b9372913a">
                         <p>LinkedIn</p>
                     </a>
                     <div class="picture">
-                        <a href="https://www.linkedin.com/in/laurence-fong"><img src="images/linkedin.png"></a>
+                        <a href="https://www.linkedin.com/in/laurence-fong-b9372913a"><img src="images/linkedin.png"></a>
                     </div>
                 </div>
                 <div class="icon" id="snapDescr">
-                    <a>  
-                        <p> Email(Click icon)</p>
+                    <a href="mailto:laurencf@usc.edu?subject=Contact from Website">
+                        <p> Email</p>
                     </a>
                     <div class="picture">
-                        <a href="mailto:laurencf@usc.edu?subject=Contact Request">
-                            <img src="images/email.jpg" id="snapchat" onmouseover="cursor()">
-                        </a>  
+                        <a href="mailto:laurencf@usc.edu?subject=Contact from Website"><img src="images/email.jpg" id="snapchat"></a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="clear"></div>
-            <hr>
+            <h1 id="message" style="margin-left: auto; margin-right: auto; width: 400px;" data-toggle="modal" data-target="#contactModal">
+                Send me a message!
+            </h5>
+            <hr style="border: 1px solid white;">
             <div id="iconContainer">
                 <div class="icon">
-                    <a href="blog.html">  
+                    <a href="wordpress">
                         <p>Blog</p>
                     </a>
                     <div class="picture">
-                        <a href="blog.html">
+                        <a href="wordpress">
                             <img src="images/blog.jpg">
                         </a>
                     </div>
                 </div>
                 <div class="icon">
-                    <a href="projects.html">  
+                    <a href="projects.html">
                         <p>Projects</p>
                     </a>
                     <div class="picture">
@@ -76,7 +88,7 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <a href="contact.html">  
+                    <a href="contact.html">
                         <p> Contact</p>
                     </a>
                     <div class="picture">
@@ -84,7 +96,7 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <a href="education.html">  
+                    <a href="education.html">
                         <p>Education</p>
                     </a>
                     <div class="picture">
@@ -92,7 +104,7 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <a href="experience.html">  
+                    <a href="experience.html">
                         <p>Experience</p>
                     </a>
                     <div class="picture">
@@ -100,24 +112,62 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <a href="Laurence-Fong-Resume-SF.pdf">  
+                    <a href="Laurence-Fong-Resume-SF.pdf">
                         <p>Resume Download</p>
                     </a>
                     <div class="picture">
-                        <a href="Laurence-Fong-Resume-SF.pdf"><img src="images/download.png"></a>
+                        <a href="resume041318.pdf"><img src="images/download.png"></a>
                     </div>
                 </div>
             </div>
-            <div id="return">Click <a href="index.html">here</a> to return to the homepage</div>
+            <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Me!</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Your Name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What's your name?">
+                          <small id="emailHelp" class="form-text text-muted">Note: This will not actually send me anything at this moment :P</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Your Message</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Type your message here!">
+                        </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">"Send"</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <script>
-            // function toggle() {
-            //     var current = document.getElementById("snapchat");
-            //     if (current.getAttribute("src") == "email.jpg") {
-            //         current.setAttribute("src", "blackMod4.jpg");
+            function toggle() {
+                var current = document.getElementById("snapchat");
+                if (current.getAttribute("src") == "email.jpg") {
+                    current.setAttribute("src", "blackMod4.jpg");
+                }
+                else  {
+                    current.setAttribute("src", "email.jpg");
+                }
+            }
+            // document.querySelector("#themeChange").onclick = function() {
+            //     console.log("Registered!");
+            //     if (document.body.style.backgroundImage == "url(/images/autumn.jpg)") {
+            //         document.body.style.backgroundImage = "url(/images/background2.jpg)";
             //     }
-            //     else  {
-            //         current.setAttribute("src", "email.jpg");
+            //     else {
+            //         document.body.style.backgroundImage = "url(/images/autumn.jpg)";
             //     }
             // }
         </script>
