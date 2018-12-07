@@ -1,0 +1,33 @@
+#iconContainer {
+    height: 40vh;
+}
+#return {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bolder;
+    color: rebeccapurple;
+}
+#snapchat {
+    cursor: pointer;
+}
+form {
+    float: left;
+    margin-left: 25%;
+    margin-bottom: 8vw;
+}
+label {
+    font-size: 2.5vw;
+    color: deepskyblue;
+    font-weight: bold;
+}
+input {
+    width: 15vw;
+}
+#message {
+    color: blue;
+    font-weight: bolder;
+    &:hover {
+        text-decoration: underline;
+    }
+}
